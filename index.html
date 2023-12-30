@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Yaswanth sai's Cyberpunk Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -13,8 +14,8 @@
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
-            background-color: #11235A; /* Set body background color */
-            color: #fff; /* Set text color */
+            background-color: #11235A;
+            color: #fff;
         }
 
         .container {
@@ -29,42 +30,44 @@
             width: 100%;
             padding: 10px 0;
             margin-right: 30px;
-            background-color: #11235A; /* Dark background for cyberpunk style */
+            background-color: #11235A;
         }
 
         .nav a {
-            color: #EEF5FF; /* Cyberpunk green */
+            color: #EEF5FF;
             text-decoration: none;
             padding: 8px 16px;
-            font-size: 20px; /* Increased font size */
+            font-size: 20px;
             margin-left: 70px;
-            font-family: 'Orbitron', sans-serif; /* Futuristic font */
-            transition: all 0.3s ease; /* Smooth transition for all properties */
+            font-family: 'Orbitron', sans-serif;
+            transition: all 0.3s ease;
         }
 
         .nav a:hover {
-            color: #ffcc00; /* Change color on hover to yellow */
-            font-size: 22px; /* Increase font size on hover */
-            transform: scale(1.1); /* Increase size on hover */
+            color: #ffcc00;
+            font-size: 22px;
+            transform: scale(1.1);
         }
 
         .content {
             display: flex;
-            justify-content: space-between; /* Adjusted spacing */
+            justify-content: space-between;
             align-items: center;
             padding: 100px;
-            text-align: left; /* Aligned text to the left */
-            color: #ffcc00; /* Cyberpunk yellow */
-            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+            text-align: left;
+            color: #ffcc00;
+            font-family: 'Orbitron', sans-serif;
             background-image: url('d3.jpeg');
             background-size: cover;
             background-position: center;
-            padding-right: 50px; /* Added padding for image */
-            padding-left: 50px; /* Added padding for text */
+            padding-right: 50px;
+            padding-left: 50px;
+            position: relative;
+            padding-bottom: 20px;
         }
 
         .intro {
-            flex: 1; /* Occupy remaining space */
+            flex: 1;
             text-align: right;
         }
 
@@ -78,10 +81,10 @@
         }
 
         .content img {
-            width: 200px; /* Adjusted image size */
-            height: auto; /* Maintain aspect ratio */
+            width: 200px;
+            height: auto;
             border-radius: 50%;
-            margin-top: 20px; /* Added margin for spacing */
+            margin-top: 20px;
         }
 
         .footer {
@@ -90,54 +93,78 @@
             left: 0;
             width: 100%;
             height: 50px;
-            background-color: #192655; /* Dark background for cyberpunk style */
+            background-color: #192655;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .footer a {
-            color: #F0F0F0; /* Cyberpunk green */
+            color: #F0F0F0;
             text-decoration: none;
             padding: 8px;
-            font-size: 20px; /* Increased font size */
-            font-family: 'Orbitron', sans-serif; /* Futuristic font */
-            transition: all 0.3s ease; /* Smooth transition for all properties */
+            font-size: 20px;
+            font-family: 'Orbitron', sans-serif;
+            transition: all 0.3s ease;
         }
 
         .footer a:hover {
-            color: #161A30; /* Change color on hover to dark blue */
-            font-size: 22px; /* Increase font size on hover */
-            transform: scale(1.1); /* Increase size on hover */
+            color: #161A30;
+            font-size: 22px;
+            transform: scale(1.1);
         }
 
         .footer i {
-            margin-right: 10px; /* Adjust the space between icons and text */
+            margin-right: 10px;
         }
 
-        /* Animation for Content */
+        .contact-button {
+            background-color: #3498DB;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 20px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .contact-button:hover {
+            background-color: #2980B9;
+            transform: scale(1.1);
+        }
+
         .content {
-            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+            opacity: 0;
             animation: fadeIn 1.5s ease-out forwards;
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-20px); /* Optional: Add a slight upward movement */
+                transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
-        /* Remove contact form styles */
+        @keyframes bounce {
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
         .contact-form {
             display: none;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="nav">
@@ -146,7 +173,6 @@
             <a href="skill.html" target="_blank">Skills</a>
             <a href="project.html" target="_blank">Projects</a>
             <a href="certificates.html" target="_blank">Certificates</a>
-            <!-- Remove the contact form link -->
         </div>
 
         <div class="content">
@@ -163,10 +189,10 @@
             <a href="mailto:your.email@example.com"><i class="far fa-envelope"></i></a>
             <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="contact.html" class="contact-button">Get in Touch with Me</a>
         </div>
 
         <script>
-            // Adjusted the existing JavaScript for responsiveness
             window.addEventListener('resize', adjustStyles);
 
             function adjustStyles() {
@@ -178,10 +204,9 @@
                 }
             }
 
-            // Call the function initially
             adjustStyles();
         </script>
     </div>
 </body>
-</html>
 
+</html>
