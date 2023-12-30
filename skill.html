@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yaswanth sai's Cyberpunk Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Reset styles */
+        body, h1, p, a, form, input, textarea {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #11235A; /* Set body background color */
+            color: #fff; /* Set text color */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            padding: 10px 0;
+            margin-right: 30px;
+            background-color: #11235A; /* Dark background for cyberpunk style */
+        }
+
+        .nav a {
+            color: #EEF5FF; /* Cyberpunk green */
+            text-decoration: none;
+            padding: 8px 16px;
+            font-size: 20px; /* Increased font size */
+            margin-left: 70px;
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+        }
+
+        .nav a:hover {
+            color: #ffcc00; /* Change color on hover to yellow */
+            font-size: 22px; /* Increase font size on hover */
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between; /* Adjusted spacing */
+            align-items: center;
+            padding: 100px;
+            text-align: left; /* Aligned text to the left */
+            color: #ffcc00; /* Cyberpunk yellow */
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+            background-image: url('d3.jpeg');
+            background-size: cover;
+            background-position: center;
+            padding-right: 50px; /* Added padding for image */
+            padding-left: 50px; /* Added padding for text */
+        }
+
+        .intro {
+            flex: 1; /* Occupy remaining space */
+            text-align: right;
+        }
+
+        .intro h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .intro p {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .content img {
+            width: 200px; /* Adjusted image size */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%;
+            margin-top: 20px; /* Added margin for spacing */
+        }
+
+        .skills-cards {
+            display: flex;
+            justify-content: center; /* Center the cards */
+            flex-wrap: wrap; /* Allow cards to wrap to the next line */
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #92C7CF; /* Card background color */
+            color: #ECF0F1; /* Text color */
+            padding: 30px;
+            border-radius: 20px;
+            width: 300px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            animation: fadeIn 1s ease-out forwards;
+            margin: 15px; /* Added gap between cards */
+        }
+
+        .card:hover {
+            background-color: #3498DB; /* Change color on hover */
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .card h2 {
+            font-size: 24px;
+            font-weight: bold; /* Made the font bold */
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Additional Animation for Skills Cards */
+        .skills-cards .card {
+            animation: fadeIn 1s ease-out, moveUp 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes moveUp {
+            from {
+                transform: translateY(10px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #192655; /* Dark background for cyberpunk style */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer a {
+            color: #F0F0F0; /* Cyberpunk green */
+            text-decoration: none;
+            padding: 8px;
+            font-size: 20px; /* Increased font size */
+            font-family: 'Orbitron', sans-serif; /* Futuristic font */
+            transition: all 0.3s ease; /* Smooth transition for all properties */
+        }
+
+        .footer a:hover {
+            color: #161A30; /* Change color on hover to dark blue */
+            font-size: 22px; /* Increase font size on hover */
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .footer i {
+            margin-right: 10px; /* Adjust the space between icons and text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html" target="_blank">Home</a>
+            <a href="aboutme.html" target="_blank">About me</a>
+            <a href="skill.html" target="_blank">Skills</a>
+            <a href="project.html" target="_blank">Projects</a>
+            <a href="certificates.html" target="_blank">Certificates</a>
+            <a href="contact.html" target="_blank">Contact Me</a> <!-- Added Contact Me link -->
+        </div>
+
+        <!-- Skills Cards Section -->
+        <div class="skills-cards">
+            <!-- Frontend Card -->
+            <div class="card">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-weight: bold;">Frontend</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+            </div>
+
+            <!-- Backend Card -->
+            <div class="card">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-weight: bold;">Backend</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <!-- Database Card -->
+            <div class="card">
+                <h2 style="font-family: 'Orbitron', sans-serif; font-weight: bold;">Database</h2>
+                <ul>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:your.email@example.com"><i class="far fa-envelope"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <script>
+            // Adjusted the existing JavaScript for responsiveness
+            window.addEventListener('resize', adjustStyles);
+
+            function adjustStyles() {
+                const content = document.querySelector('.content');
+                if (window.innerWidth < 768) {
+                    content.style.padding = '50px';
+                } else {
+                    content.style.padding = '100px';
+                }
+            }
+
+            // Call the function initially
+            adjustStyles();
+        </script>
+    </div>
+</body>
+</html>
