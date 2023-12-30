@@ -64,6 +64,8 @@
             padding-left: 50px;
             position: relative;
             padding-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards;
         }
 
         .intro {
@@ -136,9 +138,8 @@
             transform: scale(1.1);
         }
 
-        .content {
-            opacity: 0;
-            animation: fadeIn 1.5s ease-out forwards;
+        .contact-form {
+            display: none;
         }
 
         @keyframes fadeIn {
@@ -157,10 +158,6 @@
             to {
                 transform: translateY(-10px);
             }
-        }
-
-        .contact-form {
-            display: none;
         }
     </style>
 </head>
